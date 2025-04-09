@@ -1,0 +1,127 @@
+body{background-color: rgb(152, 206, 199);}
+
+div{box-sizing: border-box;}
+
+h1{
+    background-color: lightpink;
+    color: beige;
+
+    display: flex;
+}
+
+#hover:hover{background-color: pink;}
+
+table{
+    background-color: beige;
+    font-size: x-large;
+}
+
+#title1{
+    background-color: pink;
+    width: 170px;
+    height: 30px;
+}
+
+.date{color: gray;}
+
+.holidays{
+    background-color: plum;
+    border: 30px solid white;
+    
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    left: 800px;
+    color: black;
+}
+
+#nticeT, #noticeI, #noriceN{
+    border: 10px solid plum;
+}
+
+#noticeT {
+    font-size: x-large;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticeI {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticeN {
+    height: 40%;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-around;
+}
+
+#block{
+    background-color: lightblue;
+    width: 300px;
+    height: 200px;
+
+    text-shadow: 10px 10px 10px lightblue;
+    font-size: xx-large;
+    border-radius: 999px;
+    border: 10px solid rosybrown;
+}
+
+#block:hover {
+    background-color: antiquewhite;
+    animation-name: bl;
+    animation-duration: .7s;
+}
+
+@keyframes bl {
+    0%{transform: scale(1,1);}
+    20%{transform: scale(0.5,0.1);}
+    40%{transform: scale(1,0.5)}
+    60%{transform: scale(0.8,0.3)}
+    80%{transform: scale(1.15,0.8)}
+    100%{transform: scale(1,1)}
+}
+
+#outer01{
+    width: 1400px;
+    height: 500px;
+    border: 50px solid antiquewhite;
+    background-color: beige;
+    border-radius: 10px;
+    grid-auto-flow: column;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+#miniT {
+    font-size: x-large;
+}
+
+#bigouter{
+    display: flex;
+    justify-content: center;
+}
+
+#noticerealT {
+    background-color: antiquewhite;
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
